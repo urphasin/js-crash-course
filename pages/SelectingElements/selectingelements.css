@@ -1,0 +1,11 @@
+h2 {
+    color: hsl(258, 92%, 47%);
+}
+
+p:only-of-type {
+    color: blue;
+}
+
+p:only-child{
+    color: green;
+}
