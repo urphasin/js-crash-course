@@ -42,20 +42,22 @@ render(people);
 
 
 results.addEventListener('mouseover', (e) => {
-            if (e.target.tagName === "LI") {
-                e.target.style.textDecoration = "underline";
-                e.target.style.color = "yellow"
-            }
-        });
+    const target = e.target;
+    if (target instanceof HTMLElement && target.tagName === "LI") {
+        e.target.style.textDecoration = "underline";
+        e.target.style.color = "yellow"
+    }
+});
 
 results.addEventListener("mouseout", (e) => {
-    if (e.target.tagName === "LI") {
-                e.target.style.textDecoration = "none";
-                e.target.style.color = "black"
-}
+    const target = e.target;
+    if (target instanceof HTMLElement && target.tagName === "LI") {
+        e.target.style.textDecoration = "none";
+        e.target.style.color = "black"
+    }
 });
 
 results.addEventListener('click', e => {
-    console.log(e.target.textContent);
+    console.log(e.target.tagName);
     
 })
