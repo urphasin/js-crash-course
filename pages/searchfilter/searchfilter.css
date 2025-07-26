@@ -3,10 +3,17 @@ h2 {
 }
 
 li {
+    list-style-type: decimal;
     font-size: 20px;
     font-weight: 600;
+    padding: 20px;
 }
 
 ul {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     background-color: hsl(140, 86%, 81%);
+    width: auto;
 }
