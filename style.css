@@ -27,3 +27,8 @@ a:hover {
 .sidebar ul li {
     /* display: inline-block; Make <li> shrink to content width */
 }
+
+#tapBtn {
+    padding: 10px;
+    font-size: 20px;
+}
